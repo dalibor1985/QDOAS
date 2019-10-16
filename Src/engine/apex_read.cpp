@@ -16,8 +16,8 @@ using std::map;
 
 static NetCDFFile radiance_file;
 
-static map<string,vector<vector<double>>> reference_radiances;
-static map<string,vector<double> > reference_wavelengths;
+static map< string,vector< vector<double> > > reference_radiances;
+static map< string,vector<double> > reference_wavelengths;
 
 static string init_filename;
 static size_t spectral_dim; // number of wavelengths
