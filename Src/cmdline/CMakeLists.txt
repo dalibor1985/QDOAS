@@ -21,7 +21,7 @@ add_executable(doas_cl
 
 target_compile_features(doas_cl PUBLIC cxx_std_11)
 target_link_libraries(doas_cl
-  common engine mediate
+  common mediate engine
   Qt5::Core Qt5::Xml
   ${CODA_LIBRARY}
   ${GSL_LIBRARIES}

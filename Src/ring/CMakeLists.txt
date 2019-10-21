@@ -23,7 +23,7 @@ add_definitions(-DAPP_RING)
 
 target_compile_features(ring PUBLIC cxx_std_11)
 target_link_libraries(ring
-  common engine mediate
+  common mediate engine
   Qt5::Widgets Qt5::PrintSupport Qt5::Xml
   ${QWT_LIBRARY}
   ${GSL_LIBRARIES}

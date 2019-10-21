@@ -23,7 +23,7 @@ add_definitions(-DAPP_USAMP)
 
 target_compile_features(usamp PUBLIC cxx_std_11)
 target_link_libraries(usamp
-  common engine mediate
+  common mediate engine
   Qt5::Widgets Qt5::PrintSupport Qt5::Xml
   ${QWT_LIBRARY}
   ${GSL_LIBRARIES}
