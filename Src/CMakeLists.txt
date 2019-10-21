@@ -29,7 +29,7 @@ if(MSVC)
   add_definitions(-D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS)
 endif(MSVC)
 
-find_package(Qt5 COMPONENTS Core GUI Widgets Xml PrintSupport REQUIRED)
+find_package(Qt5 COMPONENTS Core Gui Widgets Xml PrintSupport REQUIRED)
 find_package(Qwt REQUIRED)
 
 find_package(CODA REQUIRED)
