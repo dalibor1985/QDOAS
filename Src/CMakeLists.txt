@@ -17,9 +17,11 @@ if(WIN32 AND DEFINED ENV{CONDA_PREFIX})
   # all non-python components need to be installed in a Library sub-directory for Conda on Windows
   set(BIN_PREFIX Library/bin)
   set(LIB_PREFIX Library/lib)
+  set(PKGDATA_PREFIX Library/share/qdoas)
 else()
   set(BIN_PREFIX bin)
   set(LIB_PREFIX lib)
+  set(PKGDATA_PREFIX share/qdoas)
 endif()
 
 SET(CMAKE_INSTALL_RPATH "${CMAKE_INSTALL_PREFIX}/${LIB_PREFIX}")

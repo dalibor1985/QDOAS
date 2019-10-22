@@ -53,3 +53,9 @@ add_library(common STATIC
 
 target_compile_features(common PUBLIC cxx_std_11)
 target_link_libraries(common Qt5::Widgets Qt5::PrintSupport Qt5::Xml)
+
+if(APPLE)
+  add_definitions(-DQDOAS_HELP_PATH="../Resources/Help")
+else()
+  add_definitions(-DQDOAS_HELP_PATH="../share/qdoas/Help")
+endif()

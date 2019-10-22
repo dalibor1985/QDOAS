@@ -120,6 +120,8 @@ set_source_files_properties(../resources/qdoas.icns PROPERTIES MACOSX_PACKAGE_LO
 
 if(APPLE)
   install(TARGETS qdoas DESTINATION .)
+  install(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/Help DESTINATION qdoas.app/Contents/Resources)
 else()
   install(TARGETS qdoas DESTINATION ${BIN_PREFIX})
+  install(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/Help DESTINATION ${PKGDATA_PREFIX})
 endif()
